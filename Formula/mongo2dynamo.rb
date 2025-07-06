@@ -1,28 +1,28 @@
 class Mongo2dynamo < Formula
   desc "CLI tool to migrate data from MongoDB to DynamoDB"
   homepage "https://github.com/dutymate/mongo2dynamo"
-  version "1.4.1"
+  version "1.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel? # darwin_amd64
-      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.1/mongo2dynamo_Darwin_x86_64.tar.gz"
-      sha256 "8363fe82b986e66fd66f2cbc53847101ed1b422aa564aed9a28af50eb937619d"
+      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.2/mongo2dynamo_Darwin_x86_64.tar.gz"
+      sha256 "b07a6bfdbb6ba79feb8288599a0b52782fc240d580b2502735ad8a9b3d246cfc"
     end
     if Hardware::CPU.arm? # darwin_arm64
-      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.1/mongo2dynamo_Darwin_arm64.tar.gz"
-      sha256 "ab4de481913b5ea39bb296dfbfd3f3f00ee0c8eb5d6bfba201d1199daa2554bd"
+      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.2/mongo2dynamo_Darwin_arm64.tar.gz"
+      sha256 "e03bb5d577a580a3ac6982ac0d4da583f1269373097566822f1ee932a280de29"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? # linux_amd64
-      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.1/mongo2dynamo_Linux_x86_64.tar.gz"
-      sha256 "4a11abe2b7ead9716ff902b280c6196a949b7bbc8082607b0dc9928d66417e9c"
+      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.2/mongo2dynamo_Linux_x86_64.tar.gz"
+      sha256 "df6f3084097d86f25738f07ffbfe3eaaaa64371bc7d823a0f5af95b5e24bf758"
     end
     if Hardware::CPU.arm? # linux_arm64
-      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.1/mongo2dynamo_Linux_arm64.tar.gz"
-      sha256 "569ac13eab6f00feb9636b4a0af2f11a26fb6235721262676ad1c95103fed3e6"
+      url "https://github.com/dutymate/mongo2dynamo/releases/download/v1.4.2/mongo2dynamo_Linux_arm64.tar.gz"
+      sha256 "9b32d60e8530d2bdee013ead08d0c8efad49945261afca37e9e8f5b316d75ae4"
     end
   end
 
